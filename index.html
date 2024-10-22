@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS Example with Sidebar</title>
+    <style>
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: grey;
+            color: white; 
+        }
+
+        header {
+            background-color: pink;
+            padding: 20px;
+            text-align: center;
+            color: grey; 
+        }
+
+        .container {
+            display: flex;
+            margin: 20px auto; 
+            max-width: 960px; 
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            background-color: white;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 15px;
+            background-color: yellow; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease; 
+        }
+
+        .sidebar a:hover {
+            background-color: pink; 
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+            background-color: pink; 
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 15px; 
+            background-color: grey; 
+            border-radius: 5px; 
+        }
+
+        h1, h2 {
+            font-weight: 600; 
+        }
+
+        h1 {
+            font-size: 2.5rem; 
+        }
+
+        h2 {
+            font-size: 1.9rem; 
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: #fff; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Personal Space</h1>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Hobbies</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Your Wants</a></li>
+                <li><a href="#">Your Loves</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Welcome!</h2>
+                <p>This is your personal space to explore your interests and passions.</p>
+            </section>
+            <section>
+                <h2>Latest Updates</h2>
+                <p>Stay tuned for the latest updates and news regarding your hobbies and favorites!</p>
+            </section>
+            <section>
+                <h2>Contact</h2>
+                <p>If you have any questions or suggestions, feel free to reach out!</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Next Steps</p>
+    </footer>
+</body>
+</html>
